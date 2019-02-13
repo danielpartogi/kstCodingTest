@@ -3,7 +3,7 @@ using node js to solve the test
 
 ## INSTALLING
 
-* Install Node Js & npm From [tags on this repository](https://nodejs.org/en/).
+* Install Node Js & npm From [NodeJS&NPM](https://nodejs.org/en/).
 * Clone this repository
 * open the terminal in clone directory
 * type 'npm start'
