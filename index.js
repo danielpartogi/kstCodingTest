@@ -26,3 +26,4 @@ result = result.join(" ");
 fs.writeFileSync('./output/sorted-names-list.txt',result);
 
 console.log('Your sorted file is in output folder');
+console.log(result);
