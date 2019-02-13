@@ -1,6 +1,6 @@
 var fs = require('fs'); // make file system used as fs variable.
 
-var pathFile = 'unsorted-names-list.txt' // u can change the txt file in here
+var pathFile = './input/unsorted-names-list.txt'; // u can change the txt file in here
 var array = fs.readFileSync(pathFile).toString().split('\n'); // it is used to read the file and make them to the array, spliting by line
 var newArray = []; //reserved array
 var result = []; // reserved array for output
@@ -23,4 +23,6 @@ newArray.forEach(element => {
 result = result.join(" ");
 
 // write the output as the name we want.
-fs.writeFileSync('sorted-names-list.txt',result);
+fs.writeFileSync('./output/sorted-names-list.txt',result);
+
+console.log('Your sorted file is in output folder');
