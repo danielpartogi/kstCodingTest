@@ -22,7 +22,7 @@ newArray.forEach(element => {
 // write the output as the name we want.
 fs.writeFileSync('./output/sorted-names-list.txt',result.join("\n"));
 
-console.log('Your sorted file is in output folder and below');
+console.log('Your sorted file is in output folder and below \n');
 
 // show every element in result
 result.forEach(element => {
