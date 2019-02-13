@@ -19,11 +19,12 @@ newArray.forEach(element => {
    result.push(element.reverse().join(" "));
 });
 
-//because it was array, we need to join it again.
-result = result.join(" ");
-
 // write the output as the name we want.
-fs.writeFileSync('./output/sorted-names-list.txt',result);
+fs.writeFileSync('./output/sorted-names-list.txt',result.join("\n"));
 
-console.log('Your sorted file is in output folder');
-console.log(result);
+console.log('Your sorted file is in output folder and below');
+
+// show every element in result
+result.forEach(element => {
+   console.log(element)
+});
